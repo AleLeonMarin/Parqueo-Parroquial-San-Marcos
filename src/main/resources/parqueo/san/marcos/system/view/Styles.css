@@ -1,0 +1,595 @@
+/* ========================= */
+/*         CONTENEDORES      */
+/* ========================= */
+.main-stack {
+    -fx-background-color: #404040;
+    -fx-border-color: #04B0D5;
+}
+
+/* Contenedor con fondo blanco */
+/* Contenedor blanco */
+.main-stack-white {
+    -fx-background-color: #FFFFFF;
+    /* Fondo blanco */
+    -fx-border-color: #04B0D5;
+    /* Borde azul */
+    -fx-border-width: 2;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-padding: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.3, 0, 2);
+}
+
+/* Contenedor azul claro */
+.main-stack-blue {
+    -fx-background-color: #D6EAF8;
+    /* Fondo azul claro */
+    -fx-border-color: #3498DB;
+    /* Borde azul más oscuro */
+    -fx-border-width: 2;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-padding: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.3, 0, 2);
+}
+
+/* Contenedor gris moderno */
+.main-stack-gray {
+    -fx-background-color: #E0E0E0;
+    /* Fondo gris moderno */
+    -fx-border-color: #7E7E7E;
+    /* Borde gris oscuro */
+    -fx-border-width: 2;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-padding: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.3, 0, 2);
+}
+
+/* Contenedor verde claro */
+.main-stack-green {
+    -fx-background-color: #D4EFDF;
+    /* Fondo verde claro */
+    -fx-border-color: #28B463;
+    /* Borde verde más oscuro */
+    -fx-border-width: 2;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-padding: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.3, 0, 2);
+}
+
+.main-stack-red {
+    -fx-background-color: #FADBD8;
+    /* Fondo rojo claro */
+    -fx-border-color: #CB4335;
+    /* Borde rojo más oscuro */
+    -fx-border-width: 2;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-padding: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.3, 0, 2);
+}
+
+.menu-bar {
+    -fx-background-color: #1A1A1A;
+    -fx-border-color: #04B0D5;
+    -fx-border-width: 2;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-padding: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0.3, 0, 2);
+}
+
+/* ========================= */
+/*         TÍTULOS           */
+/* ========================= */
+
+/* Título principal */
+.title {
+    -fx-text-fill: #FFFFFF;
+    -fx-text-alignment: center;
+    -fx-font-size: 20;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+}
+
+.title-2 {
+    -fx-text-fill: #000000;
+    /* Texto de color negro */
+    -fx-text-alignment: center;
+    /* Alineación centrada */
+    -fx-font-size: 20;
+    /* Tamaño de fuente */
+    -fx-font-style: italic;
+    /* Estilo cursiva */
+    -fx-font-weight: bold;
+    /* Estilo negrita */
+}
+
+
+
+/* ========================= */
+/*         IMÁGENES          */
+/* ========================= */
+.menu-item-parameter>ImageView {
+    -fx-image: url("../resources/parameters.png");
+}
+
+.menu-item-ingress-egress>ImageView {
+    -fx-image: url("../resources/ingress-egress.png");
+}
+
+.menu-item-reports>ImageView {
+    -fx-image: url("../resources/report.png");
+}
+
+.menu-item-exit>ImageView {
+    -fx-image: url("../resources/exit.png");
+}
+
+.menu-item-save>ImageView {
+    -fx-image: url("../resources/save.png")
+}
+
+.jfx-btn-search>ImageView {
+    -fx-image: url("../resources/search.png")
+}
+
+.menu-item-print>ImageView {
+    -fx-image: url('../resources/print.png')
+}
+
+.menu-item-pdf>ImageView {
+    -fx-image: url("../resources/pdf.png")
+}
+
+.menu-item-excel>ImageView {
+    -fx-image: url("../resources/excel.png")
+}
+
+.menu-item-cargar>ImageView {
+    -fx-image: url("../resources/load.png")
+}
+
+.menu-item-load>ImageView {
+    -fx-image: url("../resources/filter.png")
+}
+
+.menu-item-clear>ImageView {
+    -fx-image: url("../resources/clean.png")
+}
+
+.menu-item-egress>ImageView {
+    -fx-image: url("../resources/egress.png")
+}
+
+.menu-item-without-ticket>ImageView {
+    -fx-image: url("../resources/egress.png")
+}
+
+/* ========================= */
+/*         BOTONES           */
+/* ========================= */
+
+/* Botón de Parámetros */
+.menu-item-parameter,
+.menu-item-parameter:armed,
+.menu-item-parameter:unfocused,
+.menu-item-parameter:focused {
+    -fx-background-color: #B03060;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+}
+
+.menu-item-parameter:hover,
+.menu-item-parameter:pressed {
+    -fx-background-color: #2C001E;
+    -fx-transition: background-color 0.3s ease;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+}
+
+/* Botón de Ingresos y Salidas */
+.menu-item-ingress-egress,
+.menu-item-ingress-egress:armed,
+.menu-item-ingress-egress:unfocused,
+.menu-item-ingress-egress:focused {
+    -fx-background-color: #008080;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 15;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+}
+
+.menu-item-ingress-egress:hover,
+.menu-item-ingress-egress:pressed {
+    -fx-background-color: #005555;
+    -fx-transition: background-color 0.3s ease;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+}
+
+/* Botón de Reportes */
+.menu-item-reports,
+.menu-item-reports:armed,
+.menu-item-reports:unfocused,
+.menu-item-reports:focused {
+    -fx-background-color: #4682B4;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+}
+
+.menu-item-reports:hover,
+.menu-item-reports:pressed {
+    -fx-background-color: #2F4F4F;
+    -fx-transition: background-color 0.3s ease;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+}
+
+/* Botón de Salir */
+.menu-item-exit,
+.menu-item-exit:armed,
+.menu-item-exit:unfocused,
+.menu-item-exit:focused {
+    -fx-background-color: #FF4500;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+
+}
+
+.menu-item-exit:hover,
+.menu-item-exit:pressed {
+    -fx-background-color: #8B0000;
+    -fx-transition: background-color 0.3s ease;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+}
+
+/* Botón de Guardar */
+.menu-item-save,
+.menu-item-save:armed,
+.menu-item-save:unfocused,
+.menu-item-save:focused {
+    -fx-background-color: #28A745;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+}
+
+.menu-item-save:hover,
+.menu-item-save:pressed {
+    -fx-background-color: #1E7E34;
+    -fx-transition: background-color 0.3s ease;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+}
+
+.jfx-btn-search,
+.jfx-btn-search:armed,
+.jfx-btn-search:unfocused,
+.jfx-btn-search:focused {
+    -fx-background-color: #007BFF;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-padding: 10 20 10 20;
+}
+
+.jfx-btn-search:hover,
+.jfx-btn-search:pressed {
+    -fx-background-color: #0056b3;
+    -fx-transition: background-color 0.3s ease;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+}
+
+/* Botón de Imprimir */
+.menu-item-print,
+.menu-item-print:armed,
+.menu-item-print:unfocused,
+.menu-item-print:focused {
+    -fx-background-color: #6C757D;
+    /* Gris para "Imprimir" */
+    -fx-text-fill: #FFFFFF;
+    /* Texto blanco para contraste */
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-padding: 10 20 10 20;
+    /* Espaciado interno */
+}
+
+.menu-item-print:hover,
+.menu-item-print:pressed {
+    -fx-background-color: #495057;
+    /* Gris más oscuro para hover/pressed */
+    -fx-transition: background-color 0.3s ease;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+}
+
+.menu-item-pdf,
+.menu-item-pdf:armed,
+.menu-item-pdf:unfocused,
+.menu-item-pdf:focused {
+    -fx-background-color: #DC3545;
+    /* Rojo para "Exportar a PDF" */
+    -fx-text-fill: #FFFFFF;
+    /* Texto blanco */
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-padding: 10 20 10 20;
+    /* Espaciado interno */
+}
+
+.menu-item-pdf:hover,
+.menu-item-pdf:pressed {
+    -fx-background-color: #A71D2A;
+    /* Rojo más oscuro para hover/pressed */
+    -fx-transition: background-color 0.3s ease;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+}
+
+.menu-item-excel,
+.menu-item-excel:armed,
+.menu-item-excel:unfocused,
+.menu-item-excel:focused {
+    -fx-background-color: #28A745;
+    /* Verde para "Exportar a Excel" */
+    -fx-text-fill: #FFFFFF;
+    /* Texto blanco */
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-padding: 10 20 10 20;
+    /* Espaciado interno */
+}
+
+.menu-item-excel:hover,
+.menu-item-excel:pressed {
+    -fx-background-color: #1E7E34;
+    /* Verde más oscuro para hover/pressed */
+    -fx-transition: background-color 0.3s ease;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+}
+
+.menu-item-cargar,
+.menu-item-cargar:armed,
+.menu-item-cargar:unfocused,
+.menu-item-cargar:focused {
+    -fx-background-color: #007BFF;
+    /* Azul para "Buscar" */
+    -fx-text-fill: #FFFFFF;
+    /* Texto blanco */
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-padding: 10 20 10 20;
+}
+
+.menu-item-cargar:hover,
+.menu-item-cargar:pressed {
+    -fx-background-color: #0056b3;
+    /* Azul más oscuro para hover/pressed */
+    -fx-transition: background-color 0.3s ease;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+}
+
+.menu-item-load,
+.menu-item-load:armed,
+.menu-item-load:unfocused,
+.menu-item-load:focused {
+    -fx-background-color: #FFC107;
+    /* Amarillo para "Cargar" */
+    -fx-text-fill: #000000;
+    /* Texto negro */
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-padding: 10 20 10 20;
+}
+
+.menu-item-load:hover,
+.menu-item-load:pressed {
+    -fx-background-color: #D39E00;
+    /* Amarillo más oscuro para hover/pressed */
+    -fx-transition: background-color 0.3s ease;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+}
+
+.menu-item-clear,
+.menu-item-clear:armed,
+.menu-item-clear:unfocused,
+.menu-item-clear:focused {
+    -fx-background-color: #DC3545;
+    /* Rojo para "Limpiar" */
+    -fx-text-fill: #FFFFFF;
+    /* Texto blanco */
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-padding: 10 20 10 20;
+}
+
+.menu-item-clear:hover,
+.menu-item-clear:pressed {
+    -fx-background-color: #A71D2A;
+    /* Rojo más oscuro para hover/pressed */
+    -fx-transition: background-color 0.3s ease;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+}
+
+/* Botón de Egreso */
+.menu-item-egress,
+.menu-item-egress:armed,
+.menu-item-egress:unfocused,
+.menu-item-egress:focused {
+    -fx-background-color: #32CD32;
+    /* Verde brillante */
+    -fx-text-fill: #FFFFFF;
+    /* Texto blanco */
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+}
+
+/* Botón de Egreso */
+.menu-item-without-ticket,
+.menu-item-without-ticket:armed,
+.menu-item-without-ticket:unfocused,
+.menu-item-without-ticket:focused {
+    -fx-background-color: #B22222;
+    /* Rojo ladrillo */
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+}
+
+.menu-item-without-ticket:hover,
+.menu-item-without-ticket:pressed {
+    -fx-background-color: #8B0000;
+    /* Rojo más oscuro */
+    -fx-transition: background-color 0.3s ease;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+}
+
+
+/* Efecto Hover y Presionado */
+.menu-item-egress:hover,
+.menu-item-egress:pressed {
+    -fx-background-color: #228B22;
+    /* Verde oscuro */
+    -fx-transition: background-color 0.3s ease;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+}
+
+/* ========================= */
+/*         TEXTFILEDS        */
+/* ========================= */
+
+.jfx-txfs-system,
+.jfx-txfs-system:focused,
+.jfx-txfs-system:hover,
+.jfx-txfs-system:armed,
+.jfx-txfs-system:selected,
+.jfx-txfs-system:unfocused {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-border-style: none;
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-font-size: 14px;
+    -fx-text-fill: #000000;
+}
+
+.jfx-txfs-system-container,
+.jfx-txfs-system-container:focused,
+.jfx-txfs-system-container:hover,
+.jfx-txfs-system-container:armed,
+.jfx-txfs-system-container:selected,
+.jfx-txfs-system-container:unfocused {
+    -fx-border-color: #000000;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-style: solid;
+    -fx-border-radius: 0;
+    -fx-padding: 2;
+    -fx-background-color: transparent;
+    -fx-transition: border-color 0.3s ease;
+}
+
+.jfx-txfs-system-container:focused {
+    -fx-border-color: #007BFF;
+    -fx-border-width: 0 0 2 0;
+}

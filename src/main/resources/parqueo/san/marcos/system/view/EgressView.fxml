@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXDatePicker?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="900.0" styleClass="main-stack-red" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="parqueo.san.marcos.system.controller.EgressController">
+   <children>
+      <HBox alignment="TOP_CENTER" layoutX="78.0" layoutY="155.0" prefHeight="359.0" prefWidth="747.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="327.0" layoutY="20.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0" HBox.hgrow="SOMETIMES">
+               <children>
+                  <Label styleClass="title-2" text="Informacion del vehiculo" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <MFXTextField fx:id="txfPlate" floatMode="BORDER" floatingText="Placa" prefWidth="150.0">
+                           <styleClass>
+                              <String fx:value="jfx-txfs-system" />
+                              <String fx:value="jfx-txfs-system-container" />
+                           </styleClass>
+                        </MFXTextField>
+                        <MFXTextField fx:id="txfReference" floatMode="BORDER" floatingText="Referencia" layoutX="10.0" layoutY="10.0" prefWidth="150.0">
+                           <styleClass>
+                              <String fx:value="jfx-txfs-system" />
+                              <String fx:value="jfx-txfs-system-container" />
+                           </styleClass>
+                        </MFXTextField>
+                     </children>
+                  </HBox>
+                  <MFXTextField fx:id="txfOwner" floatMode="BORDER" floatingText="Dueno" layoutX="113.0" layoutY="40.0" prefWidth="150.0">
+                     <styleClass>
+                        <String fx:value="jfx-txfs-system" />
+                        <String fx:value="jfx-txfs-system-container" />
+                     </styleClass>
+                  </MFXTextField>
+                  <Label styleClass="title-2" text="Fechas" />
+                  <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="78.0" prefWidth="386.0" spacing="10.0">
+                     <children>
+                        <MFXDatePicker fx:id="dpIngressDate" floatMode="BORDER" floatingText="Fecha y Hora de Ingreso" prefHeight="38.0" prefWidth="31.0">
+                           <styleClass>
+                              <String fx:value="jfx-txfs-system" />
+                              <String fx:value="jfx-txfs-system-container" />
+                           </styleClass>
+                        </MFXDatePicker>
+                        <MFXDatePicker fx:id="dpEgressDate" floatMode="BORDER" floatingText="Fecha y Hora de Salida" prefHeight="38.0" prefWidth="119.0">
+                           <styleClass>
+                              <String fx:value="jfx-txfs-system" />
+                              <String fx:value="jfx-txfs-system-container" />
+                           </styleClass>
+                        </MFXDatePicker>
+                     </children>
+                  </HBox>
+                  <MFXTextField fx:id="txfTax" floatMode="BORDER" floatingText="Tarifa a pagar" layoutX="125.0" layoutY="78.0" prefWidth="150.0">
+                     <styleClass>
+                        <String fx:value="jfx-txfs-system" />
+                        <String fx:value="jfx-txfs-system-container" />
+                     </styleClass>
+                  </MFXTextField>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <MFXButton fx:id="btnReceipt" onAction="#onActionBtnReceipt" prefHeight="50.0" prefWidth="189.0" styleClass="menu-item-print" text="Imprimir recibo">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </MFXButton>
+                        <MFXButton fx:id="btnEgress" layoutX="10.0" layoutY="10.0" onAction="#onActionBtnEgress" prefHeight="50.0" prefWidth="189.0" styleClass="menu-item-without-ticket" text="Dar Salida">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </MFXButton>
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

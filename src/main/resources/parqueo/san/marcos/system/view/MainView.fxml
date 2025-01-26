@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" styleClass="main-stack" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="parqueo.san.marcos.system.controller.MainController">
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="758.0" prefWidth="298.0" spacing="20.0" styleClass="menu-bar" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
+         <children>
+            <Label fx:id="lblTitle" onMouseClicked="#onMouseClickedLblTitle" styleClass="title" text="Parqueo Parroquial San Marcos" wrapText="true" />
+            <MFXButton fx:id="btnIngressEgress" buttonType="RAISED" depthLevel="LEVEL5" onAction="#onActionBtnIngressEgress" prefHeight="50.0" prefWidth="140.0" styleClass="menu-item-ingress-egress" text="Ingresos de carros" textAlignment="CENTER" wrapText="true">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </MFXButton>
+            <MFXButton fx:id="btnParameters" buttonType="RAISED" depthLevel="LEVEL5" onAction="#onActionBtnParameters" prefHeight="50.0" prefWidth="140.0" styleClass="menu-item-parameter" text="Parametros">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </MFXButton>
+            <MFXButton fx:id="btnReports" buttonType="RAISED" depthLevel="LEVEL5" onAction="#onActionBtnReports" prefHeight="50.0" prefWidth="140.0" styleClass="menu-item-reports" text="Reportes">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </MFXButton>
+            <MFXButton fx:id="bntEgress" buttonType="RAISED" depthLevel="LEVEL5" layoutX="89.0" layoutY="167.0" onAction="#onActionBtnEgress" prefHeight="50.0" prefWidth="140.0" styleClass="menu-item-egress" text="Vehiculos Retirados" textAlignment="CENTER" wrapText="true">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </MFXButton>
+            <MFXButton fx:id="bntExit" buttonType="RAISED" depthLevel="LEVEL5" onAction="#onActionBtnExit" prefHeight="50.0" prefWidth="140.0" styleClass="menu-item-exit" text="Salir">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></MFXButton>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXDatePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" styleClass="main-stack-white" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="parqueo.san.marcos.system.controller.ReportsController">
+   <children>
+      <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+         <StackPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </StackPane.margin>
+         <children>
+            <Label styleClass="title-2" text="Generacion de reportes" />
+            <Label layoutX="231.0" layoutY="185.0" styleClass="title-2" text="Selecciones las fechas para el reporte" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <MFXDatePicker fx:id="dpInitialDate" floatMode="BORDER" floatingText="Fecha inicial" />
+                  <MFXDatePicker fx:id="dpFinalDate" floatMode="BORDER" floatingText="Fecha final" layoutX="10.0" layoutY="10.0" onAction="#onActiondpFinalDate" />
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <Label layoutX="195.0" layoutY="142.0" styleClass="title-2" text="Resumen de reporte" />
+            <HBox alignment="CENTER" prefHeight="297.0" prefWidth="866.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="main-stack-green" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="46.0" prefWidth="379.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="lblMoney" styleClass="title-2" text="Label" />
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../resources/money.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <Label styleClass="title-2" text="Dinero generado" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+                  <StackPane layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" styleClass="main-stack-gray" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="46.0" prefWidth="379.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="lblParked" styleClass="title-2" text="Label" />
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../resources/occupied.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <Label styleClass="title-2" text="Vehiculos" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+               </children>
+            </HBox>
+            <TableView fx:id="tbvAbstract" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </TableView>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <MFXButton fx:id="btnPdf" onAction="#onActionBtnPdf" styleClass="menu-item-pdf" text="Exportar a PDF">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </MFXButton>
+                  <MFXButton fx:id="btnExcel" onAction="#onActionBtnExcel" styleClass="menu-item-excel" text="Exportar a excel">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </MFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

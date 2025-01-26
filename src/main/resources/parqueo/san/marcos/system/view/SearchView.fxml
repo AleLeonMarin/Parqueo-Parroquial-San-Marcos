@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXDatePicker?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="main-stack-white" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="parqueo.san.marcos.system.controller.SearchController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label styleClass="title-2" text="Busqueda de vehiculos" />
+            <HBox alignment="CENTER" prefHeight="267.0" prefWidth="586.0" styleClass="main-stack-gray" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="261.0" prefWidth="282.0" spacing="20.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <MFXTextField fx:id="txfPlate" floatMode="BORDER" floatingText="Placa" prefHeight="49.0" prefWidth="200.0">
+                           <styleClass>
+                              <String fx:value="jfx-txfs-system" />
+                              <String fx:value="jfx-txfs-system-container" />
+                           </styleClass>
+                        </MFXTextField>
+                        <MFXTextField fx:id="txfOwner" floatMode="BORDER" floatingText="Dueno" prefHeight="49.0" prefWidth="200.0">
+                           <styleClass>
+                              <String fx:value="jfx-txfs-system" />
+                              <String fx:value="jfx-txfs-system-container" />
+                           </styleClass>
+                        </MFXTextField>
+                        <MFXTextField fx:id="txfReference" floatMode="BORDER" floatingText="Referencia" prefHeight="49.0" prefWidth="200.0">
+                           <styleClass>
+                              <String fx:value="jfx-txfs-system" />
+                              <String fx:value="jfx-txfs-system-container" />
+                           </styleClass>
+                        </MFXTextField>
+                        <MFXDatePicker fx:id="dpDate" floatMode="BORDER" floatingText="Fecha">
+                           <styleClass>
+                              <String fx:value="jfx-txfs-system" />
+                              <String fx:value="jfx-txfs-system-container" />
+                           </styleClass>
+                        </MFXDatePicker>
+                     </children>
+                  </VBox>
+                  <TableView fx:id="tbvResult" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </TableView>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <MFXButton fx:id="btnFilter" onAction="#onActionBtnFilter" styleClass="menu-item-load" text="Filtrar">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </MFXButton>
+                  <MFXButton fx:id="btnClean" onAction="#onActionBtnClean" styleClass="menu-item-clear" text="Limpiar">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </MFXButton>
+                  <MFXButton fx:id="btnLoad" onAction="#onActionBtnLoad" styleClass="menu-item-cargar" text="Cargar">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </MFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

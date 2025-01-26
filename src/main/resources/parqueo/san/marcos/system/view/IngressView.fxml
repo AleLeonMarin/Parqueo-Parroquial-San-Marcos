@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXDatePicker?>
+<?import io.github.palexdev.materialfx.controls.MFXTableView?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="801.0" styleClass="main-stack-white" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="parqueo.san.marcos.system.controller.IngressController">
+   <children>
+      <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+         <StackPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </StackPane.margin>
+         <children>
+            <Label styleClass="title-2" text="Ingreso de Vehiculos" />
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="main-stack-green" VBox.vgrow="ALWAYS">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <HBox layoutX="87.0" layoutY="120.0" prefHeight="359.0" prefWidth="747.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" spacing="20.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label styleClass="title-2" text="Recientes" />
+                              <MFXTableView fx:id="tbvRecents" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="313.0" prefWidth="281.0" VBox.vgrow="ALWAYS">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </MFXTableView>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="345.0" prefWidth="133.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <MFXTextField fx:id="txfPlaca" floatMode="BORDER" floatingText="Numero de Placa" prefHeight="38.0" prefWidth="178.0">
+                                 <styleClass>
+                                    <String fx:value="jfx-txfs-system" />
+                                    <String fx:value="jfx-txfs-system-container" />
+                                 </styleClass>
+                              </MFXTextField>
+                              <MFXTextField fx:id="txfDueno" floatMode="BORDER" floatingText="Dueño" prefHeight="38.0" prefWidth="177.0">
+                                 <styleClass>
+                                    <String fx:value="jfx-txfs-system" />
+                                    <String fx:value="jfx-txfs-system-container" />
+                                 </styleClass>
+                              </MFXTextField>
+                              <Label styleClass="title-2" text="Fecha y Hora de Ingreso" />
+                              <MFXDatePicker fx:id="dpDIngressDate" />
+                              <Label styleClass="title-2" text="Imprimir Tiquete" />
+                              <MFXButton fx:id="btnPrint" onAction="#onActionBtnPrint" styleClass="menu-item-print" text="Impresion">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </MFXButton>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <MFXButton fx:id="btnClean" layoutX="394.0" layoutY="16.0" onAction="#onActionBtnClean" prefHeight="50.0" prefWidth="140.0" styleClass="menu-item-clear" text="Limpiar">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </MFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>
