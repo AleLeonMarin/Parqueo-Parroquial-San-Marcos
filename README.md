@@ -1,5 +1,3 @@
-// README.md content
-
 # Parqueo Parroquial San Marcos
 
 ## Overview
